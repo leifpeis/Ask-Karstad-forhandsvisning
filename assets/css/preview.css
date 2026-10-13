@@ -1,4 +1,7 @@
 /* Review navigation and index only. Existing service/homepage styles are preserved. */
+.ak-site.site-header{position:sticky;top:0;z-index:100;background:#1b3028;box-shadow:0 3px 12px #071a1220}
+html{scroll-padding-top:120px}
+@media(max-width:850px){html{scroll-padding-top:100px}}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;white-space:nowrap}
 .ak-site .wp-block-buttons{display:flex;flex-wrap:wrap;align-items:center}
 .ak-services-nav{background:#f4f2eb;border-top:1px solid #cbd1c5;padding:28px 0;color:#244733}
