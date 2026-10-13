@@ -2,14 +2,18 @@
 (() => {
   const header = document.querySelector('.site-header');
   if (!header) return;
+  const mobile = document.querySelector('.ak-preview-mobile');
+  const phone = matchMedia('(max-width:850px)');
+  const target = () => phone.matches && mobile ? mobile : header;
   const position = () => Math.max(0, Math.min(scrollY, document.documentElement.scrollHeight - innerHeight));
   let previous = position(), direction = 0, distance = 0, scheduled = false;
-  const show = () => header.classList.remove('ak-menu-hidden');
+  const show = () => target().classList.remove('ak-menu-hidden');
   const update = () => {
     scheduled = false;
     const current = position(), delta = current - previous;
     previous = current;
-    if (current < header.offsetHeight + 40 || header.querySelector('details[open], :focus-visible')) {
+    if (delta && mobile?.open) mobile.open = false;
+    if (current < (phone.matches ? 24 : header.offsetHeight + 40) || target().querySelector(':focus-visible')) {
       show(); distance = 0; direction = 0; return;
     }
     if (!delta) return;
@@ -17,7 +21,7 @@
     if (nextDirection !== direction) { distance = 0; direction = nextDirection; }
     distance += Math.abs(delta);
     if (distance >= (direction > 0 ? 16 : 10)) {
-      header.classList.toggle('ak-menu-hidden', direction > 0);
+      target().classList.toggle('ak-menu-hidden', direction > 0);
       distance = 0;
     }
   };
@@ -25,11 +29,12 @@
     if (!scheduled) { scheduled = true; requestAnimationFrame(update); }
   }, { passive: true });
   header.addEventListener('focusin', show);
-  const mobile = document.querySelector('.ak-preview-mobile');
   if (mobile) {
+    mobile.addEventListener('focusin', show);
     mobile.addEventListener('toggle', () => { mobile.querySelector('summary').textContent = mobile.open ? 'Lukk' : 'Meny'; });
     mobile.addEventListener('click', event => { if (event.target.closest('a')) mobile.open = false; });
   }
+  phone.addEventListener('change', () => { header.classList.remove('ak-menu-hidden'); mobile?.classList.remove('ak-menu-hidden'); previous = position(); distance = 0; direction = 0; });
   document.querySelectorAll('[data-preview-contact]').forEach(button => button.addEventListener('click', () => { location.href = 'https://www.askkarstad.no/#kontakt'; }));
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;

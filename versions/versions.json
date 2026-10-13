@@ -103,5 +103,10 @@
     "id": "2026-10-13-mobile-four-rounds",
     "title": "Sluttforslag etter fire mobilrunder",
     "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-scroll-bubble",
+    "title": "Mobilboble skjules nedover og vises oppover",
+    "date": "2026-10-13"
   }
 ]
