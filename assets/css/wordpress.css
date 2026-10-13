@@ -1,0 +1,50 @@
+/* Adapters for genuine Gutenberg blocks. Original V1 rules live in v1.css. */
+.wp-site-blocks{padding:0}.wp-site-blocks>*,:is(.ak-site,.editor-styles-wrapper) .wp-block-post-content>*{margin-block-start:0;margin-block-end:0}
+:is(.ak-site,.editor-styles-wrapper) :where(figure){margin:0}:where(:is(.ak-site,.editor-styles-wrapper) .wp-block-group,:is(.ak-site,.editor-styles-wrapper) .wp-block-buttons){margin-block-start:0;margin-block-end:0}
+:is(.ak-site,.editor-styles-wrapper) .wp-block-group.wrap{margin-inline:auto}
+:is(.ak-site,.editor-styles-wrapper) .wp-block-heading{font-family:var(--heading);font-weight:400}
+:is(.ak-site,.editor-styles-wrapper) .wp-block-button__link{border-radius:0;box-shadow:none;text-decoration:none;font-family:var(--sans)}
+:is(.ak-site,.editor-styles-wrapper) .actions{gap:25px}:is(.ak-site,.editor-styles-wrapper) .actions .wp-block-button{margin:0;flex:none}
+:is(.ak-site,.editor-styles-wrapper) .primary-action .wp-block-button__link{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;background:var(--accent);color:#182c22;padding:15px 22px;border:1px solid transparent;font-size:12px;font-weight:600;min-height:51px;transition:background .2s,transform .2s}
+:is(.ak-site,.editor-styles-wrapper) .primary-action .wp-block-button__link:hover{background:#e3b88a;transform:translateY(-2px)}
+:is(.ak-site,.editor-styles-wrapper) .primary-action .wp-block-button__link span{font-size:20px;line-height:1}
+:is(.ak-site,.editor-styles-wrapper) .secondary-action .wp-block-button__link{display:inline-flex;align-items:center;gap:16px;background:none;color:inherit;padding:9px 0;border:0;border-bottom:1px solid currentColor;font-size:12px;font-weight:400}
+:is(.ak-site,.editor-styles-wrapper) .hero-meta{margin-top:40px;margin-bottom:0}:is(.ak-site,.editor-styles-wrapper) .hero-meta span:before{content:none}
+:is(.ak-site,.editor-styles-wrapper) .hero-art{margin:0 -59px 0 -31px}:is(.ak-site,.editor-styles-wrapper) .hero-illustration{margin:0;width:100%;position:relative}
+:is(.ak-site,.editor-styles-wrapper) .hero-illustration img{display:block;width:100%;height:auto;filter:drop-shadow(0 30px 20px #081b1430)}
+:is(.ak-site,.editor-styles-wrapper) .hero-caption{position:absolute;right:55px;bottom:39px;max-width:210px;text-align:right;font-size:10px;line-height:1.5;color:#adbaa8;margin:0}
+:is(.ak-site,.editor-styles-wrapper) .hero-art-label{margin:0}:is(.ak-site,.editor-styles-wrapper) .promise-item{margin:0;gap:11px}:is(.ak-site,.editor-styles-wrapper) .promise-item+ .promise-item{border-left:1px solid #647361;padding-left:45px}
+:is(.ak-site,.editor-styles-wrapper) .service-head p{margin:0;color:inherit;font-size:10px;letter-spacing:.1em}
+:is(.ak-site,.editor-styles-wrapper) .service-icon{margin:0}:is(.ak-site,.editor-styles-wrapper) .service-icon img{width:31px;height:31px;display:block}
+:is(.ak-site,.editor-styles-wrapper) .service>.wp-block-buttons{margin-top:auto}:is(.ak-site,.editor-styles-wrapper) .service-open .wp-block-button__link{background:none;border:0;border-bottom:1px solid #b6beb0;color:var(--ink);padding:8px 0;display:flex;gap:28px;align-items:center;font-size:11px;font-weight:400}
+:is(.ak-site,.editor-styles-wrapper) .service-open .wp-block-button__link:hover{color:#916441}
+:is(.ak-site,.editor-styles-wrapper) .project-image{width:88%;height:123%;margin-top:7px;display:flex;align-items:center;justify-content:center}
+:is(.ak-site,.editor-styles-wrapper) .project-image img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 8px #17261a55)}
+:is(.ak-site,.editor-styles-wrapper) .project:nth-child(2) .project-image{width:84%;transform:scaleX(-1)}
+:is(.ak-site,.editor-styles-wrapper) .project:nth-child(2) .project-image img{filter:sepia(.15) saturate(.7)}
+:is(.ak-site,.editor-styles-wrapper) .project-label{margin:0;z-index:1}:is(.ak-site,.editor-styles-wrapper) .project-meta .wp-block-buttons{flex:none}
+:is(.ak-site,.editor-styles-wrapper) .project-open .wp-block-button__link{border:1px solid #a3af9b;background:none;color:var(--ink);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;padding:0;font-size:22px;margin-left:20px}
+:is(.ak-site,.editor-styles-wrapper) .project-open .wp-block-button__link:hover{background:#d1d6c8}
+:is(.ak-site,.editor-styles-wrapper) .service-dialog{padding:3rem max(20px,calc((100% - 1280px)/2));border-top:1px solid var(--line)}
+.ak-has-dialog :is(.ak-site,.editor-styles-wrapper) .service-dialog{display:none}
+.ak-info-dialog{border:1px solid #b8c4af;padding:36px;background:var(--paper);color:var(--ink);max-width:560px;width:calc(100% - 32px);box-shadow:0 20px 80px #0a1d1655}
+.ak-info-dialog::backdrop{background:#071a12a8}.ak-info-dialog .ak-dialog-close{position:absolute;right:13px;top:13px;background:none;border:0;font-size:26px;color:var(--ink);width:32px;height:32px;display:grid;place-items:center;line-height:1}
+.ak-info-dialog h2{font-family:var(--heading);font-size:34px;font-weight:400;line-height:1.2;margin-bottom:17px}.ak-info-dialog p{font-size:14px;line-height:1.8;color:#66705e}
+.ak-info-dialog .eyebrow{font-size:9px;color:#76836b}.ak-info-dialog .dialog-note{font-size:10px;padding-top:18px;margin-top:20px;border-top:1px solid #d0d6c6}
+:is(.ak-site,.editor-styles-wrapper) .brand-logo{background:var(--paper);padding:5px 10px;width:154px;height:80px;display:flex;align-items:center;justify-content:center}
+:is(.ak-site,.editor-styles-wrapper) .brand-logo img{display:block;width:100%;height:100%;object-fit:contain}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation{color:#c8d0c4;font-size:12px;font-family:var(--sans)}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__container{gap:35px}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation-item__content{padding-block:10px}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .nav-contact{border:1px solid #617464;padding:0 16px;color:var(--paper)}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .nav-contact a:after{content:'↗';margin-left:24px}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__responsive-container.is-menu-open{background:var(--dark);color:var(--paper);padding:30px 24px}
+:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__responsive-container-open{border:1px solid #738173;padding:8px;color:var(--paper)}
+:is(.ak-site,.editor-styles-wrapper) .footer-bottom p{margin:0;max-width:530px}
+.standard-page{padding-block:70px;min-height:55vh}.standard-page .wp-block-post-content p{margin-bottom:1.3em}
+.admin-bar .site-header{top:32px}
+@media(min-width:1500px){:is(.ak-site,.editor-styles-wrapper) .hero-art{margin-right:-67px}:is(.ak-site,.editor-styles-wrapper) .hero-caption{bottom:48px}}
+@media(max-width:1100px){:is(.ak-site,.editor-styles-wrapper) .hero-art{margin-right:-29px;margin-left:-28px}:is(.ak-site,.editor-styles-wrapper) .hero-caption{right:22px;bottom:35px}:is(.ak-site,.editor-styles-wrapper) .actions{gap:18px}:is(.ak-site,.editor-styles-wrapper) .primary-action .wp-block-button__link{padding:14px 16px;gap:18px}:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__container{gap:21px}}
+@media(max-width:850px){:is(.ak-site,.editor-styles-wrapper) .hero-art{margin-right:-18px;margin-left:-95px}:is(.ak-site,.editor-styles-wrapper) .hero-caption{bottom:31px;right:19px;font-size:9px}:is(.ak-site,.editor-styles-wrapper) .hero-meta{margin-top:31px}:is(.ak-site,.editor-styles-wrapper) .actions{flex-direction:column;align-items:flex-start;gap:7px}:is(.ak-site,.editor-styles-wrapper) .promise-item+.promise-item{padding-left:15px}:is(.ak-site,.editor-styles-wrapper) .project-open .wp-block-button__link{height:34px;width:34px;margin-left:8px}:is(.ak-site,.editor-styles-wrapper) .brand-logo{width:129px;height:66px}:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__responsive-container:not(.is-menu-open){display:none}:is(.ak-site,.editor-styles-wrapper) .ak-navigation .wp-block-navigation__responsive-container-open{display:flex}}
+@media(max-width:782px){.admin-bar .site-header{top:46px}}
+@media(max-width:600px){:is(.ak-site,.editor-styles-wrapper) .hero-art{margin:-8px -16px 0}:is(.ak-site,.editor-styles-wrapper) .hero-illustration{height:100%}:is(.ak-site,.editor-styles-wrapper) .hero-illustration img{width:100%;height:100%;filter:none}:is(.ak-site,.editor-styles-wrapper) .hero-caption{bottom:16px;right:15px;font-size:8px;max-width:180px}:is(.ak-site,.editor-styles-wrapper) .hero-meta{margin-top:27px}:is(.ak-site,.editor-styles-wrapper) .actions{flex-direction:row;align-items:center;gap:21px}:is(.ak-site,.editor-styles-wrapper) .primary-action .wp-block-button__link{padding:13px 16px;font-size:11px;gap:17px;min-height:47px}:is(.ak-site,.editor-styles-wrapper) .secondary-action .wp-block-button__link{font-size:11px;gap:11px}:is(.ak-site,.editor-styles-wrapper) .service-icon img{width:27px;height:27px}:is(.ak-site,.editor-styles-wrapper) .service-open .wp-block-button__link{font-size:10px;gap:12px}:is(.ak-site,.editor-styles-wrapper) .project-image{width:90%;height:127%}:is(.ak-site,.editor-styles-wrapper) .project:nth-child(2) .project-image{width:86%}:is(.ak-site,.editor-styles-wrapper) .project-open .wp-block-button__link{height:39px;width:39px}:is(.ak-site,.editor-styles-wrapper) .brand-logo{width:120px;height:62px}:is(.ak-site,.editor-styles-wrapper) .footer-bottom{padding-bottom:27px}.ak-info-dialog{padding:31px 23px}.ak-info-dialog h2{font-size:29px}}
