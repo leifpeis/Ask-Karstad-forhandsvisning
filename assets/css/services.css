@@ -120,3 +120,15 @@
  .editor-styles-wrapper .ak-service-title{font-size:clamp(42px,7cqi,64px)}
  .editor-styles-wrapper .ak-service-copy{padding:48px 0}
 }
+
+/* Shared action treatment with the homepage; scoped to service pages. */
+.ak-service .ak-service-actions{gap:16px 24px;align-items:center}
+.ak-service .ak-service-actions .wp-block-button{margin:0;max-width:100%}
+.ak-service .ak-service-actions .wp-block-button__link{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:51px;max-width:100%;padding:15px 22px;line-height:1.5}
+.ak-service .ak-service-actions .ak-service-secondary .wp-block-button__link{justify-content:flex-start;gap:16px;padding:9px 0;font-weight:400;border-bottom:1px solid currentColor}
+.ak-service .ak-service-actions .wp-block-button__link span[aria-hidden]{font-size:20px;line-height:1;flex-shrink:0}
+@media(max-width:600px){
+ .ak-service .ak-service-actions{gap:14px;align-items:center}
+ .ak-service .ak-service-actions .wp-block-button__link{padding:13px 16px;gap:17px;font-size:14px;min-height:48px}
+ .ak-service .ak-service-actions .ak-service-secondary .wp-block-button__link{padding:9px 0;gap:11px}
+}

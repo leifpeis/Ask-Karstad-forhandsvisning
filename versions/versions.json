@@ -2,171 +2,246 @@
   {
     "id": "2026-10-13-scroll-menu",
     "title": "Meny som skjules nedover og vises oppover",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T12:36:12.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-menu",
     "title": "Større mobiltekst, enkel toppmeny og direkte tjenestelenker",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T12:36:12.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-complete",
     "title": "Komplett forside med større mobiltekst og enkel toppmeny",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T12:36:12.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-two-columns-restored",
     "title": "Tjenestekort tilbake i to kolonner",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T12:44:18.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r1-a",
     "title": "Runde 1 / A: Lav knapp til høyre (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r1-b",
     "title": "Runde 1 / B: Lav knapp i midten",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r1-c",
     "title": "Runde 1 / C: Bred menyknapp nederst",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r1-d",
     "title": "Runde 1 / D: Sandfarget knapp til høyre",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r2-a",
     "title": "Runde 2 / A: 14 px brødtekst / 13 px i kort",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r2-b",
     "title": "Runde 2 / B: 16 px brødtekst / 14 px i kort (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r2-c",
     "title": "Runde 2 / C: 17 px brødtekst / 15 px i kort",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r2-d",
     "title": "Runde 2 / D: 18 px brødtekst / 16 px i kort",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r3-a",
     "title": "Runde 3 / A: 44 px trykkflater",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r3-b",
     "title": "Runde 3 / B: 48 px trykkflater (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r3-c",
     "title": "Runde 3 / C: 52 px trykkflater",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r3-d",
     "title": "Runde 3 / D: 56 px trykkflater",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r4-a",
     "title": "Runde 4 / A: Originalt skjema med større etiketter",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r4-b",
     "title": "Runde 4 / B: Tydelige felt og romslig sendeknapp (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r4-c",
     "title": "Runde 4 / C: Mer luft mellom feltene",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-r4-d",
     "title": "Runde 4 / D: Kompakt kontaktseksjon",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-mobile-four-rounds",
     "title": "Sluttforslag etter fire mobilrunder",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:08:30.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-scroll-bubble",
     "title": "Mobilboble skjules nedover og vises oppover",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:20:44.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-centered-menu",
     "title": "Sentrert mobilmeny med mindre dødplass",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:30:44.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-compact-menu",
     "title": "Mindre meny med fri plass til scrolling",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T13:58:24.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-option-a",
     "title": "Meny A – mørk liste (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:11:13.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-option-b",
     "title": "Meny B – separate rader",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:11:13.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-option-c",
     "title": "Meny C – lyst panel",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:11:13.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-option-d",
     "title": "Meny D – fire felt",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:11:13.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-four-menu-winner",
     "title": "Fire menyforslag – valgt sluttforslag A",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:11:13.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-type-18",
     "title": "Menytekst – 18 px",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:18:52.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-type-19",
     "title": "Menytekst – 19 px",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:18:52.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-type-20",
     "title": "Menytekst – 20 px (valgt)",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:18:52.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-type-22",
     "title": "Menytekst – 22 px",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:18:52.000Z",
+    "timestampSource": "git-first-snapshot-commit"
   },
   {
     "id": "2026-10-13-menu-type-winner",
     "title": "Menytekst – valgt sluttforslag 20 px",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:18:52.000Z",
+    "timestampSource": "git-first-snapshot-commit"
+  },
+  {
+    "id": "2026-10-13-service-actions",
+    "title": "Tjenestesider – ryddige og gjennomgående knapper",
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:29:14.673Z",
+    "timestampSource": "snapshot-created"
   }
 ]
