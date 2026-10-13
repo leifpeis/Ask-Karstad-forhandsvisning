@@ -7,6 +7,18 @@
 .ak-services-current{font-size:11px}
 .ak-preview-form-note{font:13px/1.6 Arial,sans-serif;margin-top:14px}
 .ak-preview-form-note a{text-decoration:underline}
+.ak-round-section{padding-top:42px;margin-top:32px;border-top:1px solid #cbd1c5}
+.ak-round-section>.ak-preview-grid{margin-top:24px}
+.ak-round-section .ak-preview-card img{height:390px;object-fit:contain;background:#e9eae1}
+.ak-round-section h3{font:26px/1.2 Georgia,serif;margin:0 0 12px}
+@media(max-width:850px){
+ .ak-preview-mobile,.ak-preview-mobile *{box-sizing:border-box}
+ .ak-preview-mobile{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:120}
+ .ak-preview-mobile summary{background:#1b3028;box-shadow:0 4px 18px #071a1233}
+ .ak-preview-mobile nav{top:auto;bottom:calc(100% + 12px);right:0;width:min(310px,calc(100vw - 32px));max-height:calc(100dvh - 120px - env(safe-area-inset-bottom, 0px))}
+ html{scroll-padding-bottom:calc(84px + env(safe-area-inset-bottom, 0px))}
+ body{padding-bottom:calc(84px + env(safe-area-inset-bottom, 0px))}
+}
 @media(max-width:600px){
  .ak-site.site-header .nav-row{min-height:84px}
  .ak-site .hero p.hero-body,.ak-site .section-heading>p,.ak-site p.about-copy,.ak-site .step-copy>p,.ak-site .contact-copy>p:not(.eyebrow):not(.contact-location){font-size:16px;line-height:1.75}

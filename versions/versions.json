@@ -18,5 +18,90 @@
     "id": "2026-10-13-two-columns-restored",
     "title": "Tjenestekort tilbake i to kolonner",
     "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r1-a",
+    "title": "Runde 1 / A: Lav knapp til høyre (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r1-b",
+    "title": "Runde 1 / B: Lav knapp i midten",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r1-c",
+    "title": "Runde 1 / C: Bred menyknapp nederst",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r1-d",
+    "title": "Runde 1 / D: Sandfarget knapp til høyre",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r2-a",
+    "title": "Runde 2 / A: 14 px brødtekst / 13 px i kort",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r2-b",
+    "title": "Runde 2 / B: 16 px brødtekst / 14 px i kort (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r2-c",
+    "title": "Runde 2 / C: 17 px brødtekst / 15 px i kort",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r2-d",
+    "title": "Runde 2 / D: 18 px brødtekst / 16 px i kort",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r3-a",
+    "title": "Runde 3 / A: 44 px trykkflater",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r3-b",
+    "title": "Runde 3 / B: 48 px trykkflater (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r3-c",
+    "title": "Runde 3 / C: 52 px trykkflater",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r3-d",
+    "title": "Runde 3 / D: 56 px trykkflater",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r4-a",
+    "title": "Runde 4 / A: Originalt skjema med større etiketter",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r4-b",
+    "title": "Runde 4 / B: Tydelige felt og romslig sendeknapp (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r4-c",
+    "title": "Runde 4 / C: Mer luft mellom feltene",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-r4-d",
+    "title": "Runde 4 / D: Kompakt kontaktseksjon",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-mobile-four-rounds",
+    "title": "Sluttforslag etter fire mobilrunder",
+    "date": "2026-10-13"
   }
 ]

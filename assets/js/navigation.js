@@ -25,15 +25,15 @@
     if (!scheduled) { scheduled = true; requestAnimationFrame(update); }
   }, { passive: true });
   header.addEventListener('focusin', show);
-  header.addEventListener('toggle', () => {
-    if (header.querySelector('details[open]')) show();
-    const mobile = header.querySelector('.ak-preview-mobile');
-    if (mobile) mobile.querySelector('summary').textContent = mobile.open ? 'Lukk' : 'Meny';
-  }, true);
+  const mobile = document.querySelector('.ak-preview-mobile');
+  if (mobile) {
+    mobile.addEventListener('toggle', () => { mobile.querySelector('summary').textContent = mobile.open ? 'Lukk' : 'Meny'; });
+    mobile.addEventListener('click', event => { if (event.target.closest('a')) mobile.open = false; });
+  }
   document.querySelectorAll('[data-preview-contact]').forEach(button => button.addEventListener('click', () => { location.href = 'https://www.askkarstad.no/#kontakt'; }));
-  header.addEventListener('keydown', event => {
+  document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
-    const open = header.querySelector('details[open]');
+    const open = document.querySelector('.ak-preview-mobile[open]') || header.querySelector('details[open]');
     if (open) { open.open = false; open.querySelector('summary').focus(); }
   });
 })();
