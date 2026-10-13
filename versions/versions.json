@@ -278,5 +278,12 @@
     "date": "2026-10-13",
     "timestamp": "2026-10-13T14:40:22.397Z",
     "timestampSource": "snapshot-created"
+  },
+  {
+    "id": "2026-10-13-simple-services-nav",
+    "title": "Enkel tjenesteoversikt uten Denne siden",
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T14:52:09.554Z",
+    "timestampSource": "snapshot-created"
   }
 ]
