@@ -118,5 +118,30 @@
     "id": "2026-10-13-compact-menu",
     "title": "Mindre meny med fri plass til scrolling",
     "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-option-a",
+    "title": "Meny A – mørk liste (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-option-b",
+    "title": "Meny B – separate rader",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-option-c",
+    "title": "Meny C – lyst panel",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-option-d",
+    "title": "Meny D – fire felt",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-four-menu-winner",
+    "title": "Fire menyforslag – valgt sluttforslag A",
+    "date": "2026-10-13"
   }
 ]
