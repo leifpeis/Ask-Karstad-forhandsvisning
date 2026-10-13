@@ -292,5 +292,12 @@
     "date": "2026-10-13",
     "timestamp": "2026-10-13T15:23:13.496Z",
     "timestampSource": "snapshot-created"
+  },
+  {
+    "id": "2026-10-13-layout-restored",
+    "title": "Før og etter – original luft og bunntekst tilbake",
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T15:41:52.113Z",
+    "timestampSource": "snapshot-created"
   }
 ]
