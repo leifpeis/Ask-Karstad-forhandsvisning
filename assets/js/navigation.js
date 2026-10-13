@@ -25,7 +25,12 @@
     if (!scheduled) { scheduled = true; requestAnimationFrame(update); }
   }, { passive: true });
   header.addEventListener('focusin', show);
-  header.addEventListener('toggle', () => { if (header.querySelector('details[open]')) show(); }, true);
+  header.addEventListener('toggle', () => {
+    if (header.querySelector('details[open]')) show();
+    const mobile = header.querySelector('.ak-preview-mobile');
+    if (mobile) mobile.querySelector('summary').textContent = mobile.open ? 'Lukk' : 'Meny';
+  }, true);
+  document.querySelectorAll('[data-preview-contact]').forEach(button => button.addEventListener('click', () => { location.href = 'https://www.askkarstad.no/#kontakt'; }));
   header.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
     const open = header.querySelector('details[open]');
