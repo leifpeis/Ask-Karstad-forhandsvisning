@@ -10,9 +10,6 @@
 @media(max-width:600px){
  .ak-site.site-header .nav-row{min-height:84px}
  .ak-site .hero p.hero-body,.ak-site .section-heading>p,.ak-site p.about-copy,.ak-site .step-copy>p,.ak-site .contact-copy>p:not(.eyebrow):not(.contact-location){font-size:16px;line-height:1.75}
- .ak-site #tjenester .services-grid{grid-template-columns:1fr}
- .ak-site #tjenester .service{padding:26px 0;min-height:0}
- .ak-site #tjenester .service>p{font-size:16px;line-height:1.75;margin-bottom:20px}
  .ak-site #tjenester .service-open a{font-size:15px;min-height:48px}
  .ak-site .actions{flex-wrap:wrap;gap:14px 20px}
  .ak-site .primary-action a,.ak-site .secondary-action a{font-size:14px;min-height:48px}
