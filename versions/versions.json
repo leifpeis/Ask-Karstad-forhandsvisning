@@ -143,5 +143,30 @@
     "id": "2026-10-13-four-menu-winner",
     "title": "Fire menyforslag – valgt sluttforslag A",
     "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-type-18",
+    "title": "Menytekst – 18 px",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-type-19",
+    "title": "Menytekst – 19 px",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-type-20",
+    "title": "Menytekst – 20 px (valgt)",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-type-22",
+    "title": "Menytekst – 22 px",
+    "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-menu-type-winner",
+    "title": "Menytekst – valgt sluttforslag 20 px",
+    "date": "2026-10-13"
   }
 ]
