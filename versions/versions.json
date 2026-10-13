@@ -299,5 +299,12 @@
     "date": "2026-10-13",
     "timestamp": "2026-10-13T15:41:52.113Z",
     "timestampSource": "snapshot-created"
+  },
+  {
+    "id": "2026-10-13-complete-site-1814",
+    "title": "Samlet nettside med tømrerside og felles tjenesteoversikt",
+    "date": "2026-10-13",
+    "timestamp": "2026-10-13T16:13:13.754Z",
+    "timestampSource": "snapshot-created"
   }
 ]
