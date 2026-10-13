@@ -1,0 +1,6 @@
+/* Match the original homepage introduction; do not affect cards or other sections. */
+.ak-site #tjenester .section-heading{margin-bottom:42px}
+.ak-site #tjenester .section-heading>p{font-size:14px;line-height:1.8}
+@media(max-width:850px){.ak-site #tjenester .section-heading>p{font-size:12px}}
+@media(max-width:600px){.ak-site #tjenester .section-heading{margin-bottom:28px}}
+
