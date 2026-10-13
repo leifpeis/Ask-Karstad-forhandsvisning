@@ -113,5 +113,10 @@
     "id": "2026-10-13-centered-menu",
     "title": "Sentrert mobilmeny med mindre dødplass",
     "date": "2026-10-13"
+  },
+  {
+    "id": "2026-10-13-compact-menu",
+    "title": "Mindre meny med fri plass til scrolling",
+    "date": "2026-10-13"
   }
 ]
