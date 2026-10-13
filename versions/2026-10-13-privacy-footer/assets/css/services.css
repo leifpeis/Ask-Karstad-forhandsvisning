@@ -1,0 +1,134 @@
+/* Service patterns only. The approved homepage rules are unchanged. */
+.ak-service{font-family:Arial,Helvetica,sans-serif;color:#183229;background:#f4f2eb;max-width:none;width:100%}
+.ak-service *{box-sizing:border-box;min-width:0}
+.ak-service :is(p,h1,h2,h3,figure){margin:0}
+.ak-service .ak-service-wrap{width:min(calc(100% - 104px),1280px);max-width:none;margin-inline:auto}
+.ak-service .ak-service-eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#67755e;margin-bottom:20px}
+.ak-service .ak-service-heading{font:400 clamp(36px,3.6vw,54px)/1.12 Georgia,serif;letter-spacing:-.035em;margin-bottom:25px}
+.ak-service .ak-service-body{font:400 14px/1.85 Arial,sans-serif;color:#596850}
+.ak-service .ak-service-hero{background:#172c25;color:#f4f2eb}
+.ak-service .ak-service-hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:stretch;min-height:625px}
+.ak-service .ak-service-copy{padding:78px 38px 70px 0;align-self:center}
+.ak-service .ak-service-copy .ak-service-eyebrow{color:#bac6b4;display:flex;align-items:center;gap:13px;margin-bottom:29px}
+.ak-service .ak-service-copy .ak-service-eyebrow::before{content:'';width:24px;height:1px;background:#d0b58c;flex:none}
+.ak-service .ak-service-title{font:400 clamp(48px,5vw,74px)/1.06 Georgia,serif;letter-spacing:-.045em;margin-bottom:27px;color:#fffefa;overflow-wrap:normal}
+.ak-service .ak-service-title span{display:block;color:#d0b58c;margin-top:8px}
+.ak-service .ak-service-lead{font:400 16px/1.8 Arial,sans-serif;color:#bec9bc;max-width:470px;margin-bottom:30px}
+.ak-service .ak-service-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.ak-service .ak-service-actions .wp-block-button{margin:0}
+.ak-service .ak-service-actions .wp-block-button__link{font:600 12px/1.5 Arial,sans-serif;border-radius:0;padding:15px 20px;min-height:49px;white-space:normal;text-decoration:none}
+.ak-service .ak-service-primary .wp-block-button__link{background:#d4a579;color:#172c25;border:1px solid transparent}
+.ak-service .ak-service-primary .wp-block-button__link:hover{background:#e3b88a}
+.ak-service .ak-service-secondary .wp-block-button__link{background:transparent;color:#dce3d5;padding:12px 0;border:0;border-bottom:1px solid #82917d}
+.ak-service .ak-service-location{margin-top:34px;border-top:1px solid #4f6450;padding-top:20px;font:10px/1.7 Arial,sans-serif;letter-spacing:.04em;color:#aebba8}
+.ak-service .ak-service-art{position:relative;display:flex;flex-direction:column;justify-content:space-between;background:#20392f;border-left:1px solid #4a6050;padding:30px 25px;isolation:isolate}
+.ak-service .ak-service-art-label{font:10px/1.6 Arial,sans-serif;letter-spacing:.11em;color:#b6c5b2;text-transform:uppercase}
+.ak-service .ak-service-image{width:100%;margin-block:16px}
+.ak-service .ak-service-image img{display:block;width:100%;height:auto;aspect-ratio:560/480;object-fit:contain}
+.ak-service .ak-service-caption{font:10px/1.6 Arial,sans-serif;color:#b6c5b2;border-top:1px solid #4a6050;padding-top:17px}
+.ak-service .ak-service-section{padding-block:88px}
+.ak-service .ak-service-intro-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:100px}
+.ak-service .ak-service-aside{border-left:1px solid #c2cbbc;padding-left:40px}
+.ak-service h3{font:400 27px/1.22 Georgia,serif;letter-spacing:-.015em;margin-bottom:15px;color:inherit}
+.ak-service .ak-service-aside .ak-service-eyebrow{margin-top:29px;margin-bottom:13px;font-size:10px}
+.ak-service .ak-service-aside .ak-service-body{font-size:13px}
+.ak-service .ak-service-delivery{background:#e9eae1}
+.ak-service .ak-service-delivery .ak-service-heading{margin-bottom:37px}
+.ak-service .ak-service-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid #c6cebe}
+.ak-service .ak-service-card{padding:30px 30px 35px 0}
+.ak-service .ak-service-card+.ak-service-card{border-left:1px solid #c6cebe;padding-left:30px}
+.ak-service .ak-service-number{font:11px/1.5 Arial,sans-serif;letter-spacing:.1em;color:#697b60}
+.ak-service .ak-service-card .ak-service-number{margin-bottom:40px}
+.ak-service .ak-service-card .ak-service-body{font-size:13px}
+.ak-service .ak-service-process{background:#20392f;color:#f4f2eb}
+.ak-service .ak-service-process-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:100px}
+.ak-service .ak-service-process .ak-service-eyebrow{color:#bdc4ad}
+.ak-service .ak-service-process .ak-service-body{color:#c2cebb}
+.ak-service .ak-service-process .ak-service-number{color:#d0b58c}
+.ak-service .ak-service-step{display:grid;grid-template-columns:34px 1fr;gap:18px;padding:23px 0;border-bottom:1px solid #566e58}
+.ak-service .ak-service-step:first-child{padding-top:0}
+.ak-service .ak-service-step .ak-service-number{padding-top:4px}
+.ak-service .ak-service-step h3{font-size:25px;margin-bottom:9px}
+.ak-service .ak-service-step .ak-service-body{font-size:13px}
+.ak-service .ak-service-faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:85px}
+.ak-service .ak-service-faq details{border-top:1px solid #cbd1c5;padding:21px 0}
+.ak-service .ak-service-faq details:last-child{border-bottom:1px solid #cbd1c5}
+.ak-service .ak-service-faq summary{font:500 14px/1.6 Arial,sans-serif;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px}
+.ak-service .ak-service-faq summary::-webkit-details-marker{display:none}
+.ak-service .ak-service-faq summary::after{content:'+';font:23px/1.1 Arial,sans-serif;color:#697b60;flex:none}
+.ak-service .ak-service-faq details[open] summary::after{content:'−'}
+.ak-service .ak-service-faq details p{font:13px/1.85 Arial,sans-serif;color:#596850;margin-top:15px;margin-right:25px}
+.ak-service .ak-service-cta{background:#e3e5da;border-top:1px solid #cbd2c3}
+.ak-service .ak-service-cta-grid{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:80px}
+.ak-service .ak-service-cta .ak-service-actions{justify-content:flex-end}
+.ak-service .ak-service-cta .ak-service-primary .wp-block-button__link{background:#20392f;color:#fffefa}
+.ak-service .ak-service-cta .ak-service-primary .wp-block-button__link:hover{background:#355340}
+.ak-service .ak-service-related{padding-block:28px}
+.ak-service .ak-service-related-links{display:flex;flex-wrap:wrap;gap:12px 27px;align-items:center}
+.ak-service .ak-service-related p{font:12px/1.7 Arial,sans-serif}
+.ak-service .ak-service-related .ak-service-eyebrow{font-size:10px;margin:0}
+.ak-service .ak-service-related a{color:#244733;text-decoration:underline;text-underline-offset:4px}
+.ak-service a:focus-visible,.ak-service summary:focus-visible{outline:3px solid #a58156;outline-offset:5px}
+@media(max-width:1100px){
+ .ak-service .ak-service-wrap{width:calc(100% - 64px)}
+ .ak-service .ak-service-hero-grid{min-height:575px}
+ .ak-service .ak-service-copy{padding-right:28px}
+ .ak-service .ak-service-title{font-size:clamp(46px,5vw,62px)}
+ .ak-service .ak-service-intro-grid,.ak-service .ak-service-process-grid,.ak-service .ak-service-faq-grid,.ak-service .ak-service-cta-grid{gap:50px}
+}
+@media(max-width:850px){
+ .ak-service .ak-service-wrap{width:calc(100% - 44px)}
+ .ak-service .ak-service-hero-grid{grid-template-columns:1fr}
+ .ak-service .ak-service-copy{padding:58px 0;max-width:650px}
+ .ak-service .ak-service-title{font-size:clamp(48px,7vw,64px)}
+ .ak-service .ak-service-art{border-left:0;border-top:1px solid #4a6050}
+ .ak-service .ak-service-image{max-width:530px;margin:10px auto}
+ .ak-service .ak-service-intro-grid,.ak-service .ak-service-process-grid,.ak-service .ak-service-faq-grid{grid-template-columns:1fr;gap:36px}
+ .ak-service .ak-service-card{padding-right:20px}
+ .ak-service .ak-service-card+.ak-service-card{padding-left:20px}
+ .ak-service h3{font-size:24px}
+ .ak-service .ak-service-section{padding-block:65px}
+}
+@media(max-width:600px){
+ .ak-service .ak-service-wrap{width:calc(100% - 40px)}
+ .ak-service .ak-service-copy{padding:43px 0}
+ .ak-service .ak-service-copy .ak-service-eyebrow{font-size:9px;letter-spacing:.12em;margin-bottom:22px}
+ .ak-service .ak-service-title{font-size:clamp(42px,11vw,62px);margin-bottom:23px}
+ .ak-service .ak-service-lead{font-size:14px;margin-bottom:24px}
+ .ak-service .ak-service-actions{gap:12px 20px}
+ .ak-service .ak-service-actions .wp-block-button__link{font-size:11px;padding:13px 16px}
+ .ak-service .ak-service-secondary .wp-block-button__link{padding-inline:0}
+ .ak-service .ak-service-location{margin-top:28px;font-size:10px}
+ .ak-service .ak-service-art{padding:22px 16px}
+ .ak-service .ak-service-art-label,.ak-service .ak-service-caption{font-size:9px}
+ .ak-service .ak-service-section{padding-block:54px}
+ .ak-service .ak-service-heading{font-size:38px;margin-bottom:21px}
+ .ak-service .ak-service-body{font-size:13px}
+ .ak-service .ak-service-aside{padding-left:23px}
+ .ak-service .ak-service-cards{grid-template-columns:1fr}
+ .ak-service .ak-service-card,.ak-service .ak-service-card+.ak-service-card{padding:24px 0 29px;border-left:0}
+ .ak-service .ak-service-card+.ak-service-card{border-top:1px solid #c6cebe}
+ .ak-service .ak-service-card .ak-service-number{margin-bottom:18px}
+ .ak-service .ak-service-faq summary{font-size:13px}
+ .ak-service .ak-service-cta-grid{grid-template-columns:1fr;gap:26px}
+ .ak-service .ak-service-cta .ak-service-actions{justify-content:flex-start}
+ .ak-service .ak-service-related-links{gap:13px 20px}
+}
+/* Adapt to the real editor canvas while retaining native block controls. */
+@container ak-editor (max-width:900px){
+ .editor-styles-wrapper .ak-service-hero-grid,.editor-styles-wrapper .ak-service-intro-grid,.editor-styles-wrapper .ak-service-process-grid,.editor-styles-wrapper .ak-service-faq-grid,.editor-styles-wrapper .ak-service-cta-grid{grid-template-columns:1fr;gap:32px}
+ .editor-styles-wrapper .ak-service-title{font-size:clamp(42px,7cqi,64px)}
+ .editor-styles-wrapper .ak-service-copy{padding:48px 0}
+}
+
+/* Shared action treatment with the homepage; scoped to service pages. */
+.ak-service .ak-service-actions{gap:16px 24px;align-items:center}
+.ak-service .ak-service-actions .wp-block-button{margin:0;max-width:100%}
+.ak-service .ak-service-actions .wp-block-button__link{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:51px;max-width:100%;padding:15px 22px;line-height:1.5}
+.ak-service .ak-service-actions .ak-service-secondary .wp-block-button__link{justify-content:flex-start;gap:16px;padding:9px 0;font-weight:400;border-bottom:1px solid currentColor}
+.ak-service .ak-service-actions .wp-block-button__link span[aria-hidden]{font-size:20px;line-height:1;flex-shrink:0}
+@media(max-width:600px){
+ .ak-service .ak-service-actions{gap:14px;align-items:center}
+ .ak-service .ak-service-actions .wp-block-button__link{padding:13px 16px;gap:17px;font-size:14px;min-height:48px}
+ .ak-service .ak-service-actions .ak-service-secondary .wp-block-button__link{padding:9px 0;gap:11px}
+}
