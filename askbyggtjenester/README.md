@@ -1,9 +1,11 @@
-# Ask Bygg og Ingeniørtjenester – designforhåndsvisning
+# Ask Bygg – forhåndsvisning
+[Åpne versjon 02 – fungerende navigasjon](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
 
-[Åpne eksempelsiden](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
+Samme oppsett som Ask & Karstad: privat kilde og offentlig statisk GitHub Pages-visning, uten innlogging, skjema, sporing eller automatisk WordPress-publisering.
 
-Dette er en **avgrenset testmappe** under et eksisterende offentlig GitHub Pages-repository. Ask & Karstads forhåndsvisning og produksjon påvirkes ikke.
+- **Nyeste versjon:** `/askbyggtjenester/` viser versjon 02, med 9 navigerbare sider.
+- **Arkiv v1:** `/askbyggtjenester/versions/2026-10-14-v1/` er urørt.
+- **Arkiv v2:** `/askbyggtjenester/versions/2026-10-14-v2/` er en uforanderlig kopi.
+- **Kilde:** `leifpeis/Ask-Byggtjenester-nettside`, gren `preview/2026-10-14-v1`, mappe `preview/v2/`.
 
-All kildeutvikling foregår i det private `leifpeis/Ask-Byggtjenester-nettside` på grenen `preview/2026-10-14-v1`. Denne mappen inneholder utelukkende statisk HTML, ingen innlogging, passord, skjema eller sporing.
-
-**Versjonsprinsipp:** Endringer arkiveres først som uforanderlige snapshots under `versions/`. Den aktive `index.html` er en kopi av valgt versjon, ikke en egen kilde. Alle testvisninger har `noindex,nofollow`. Kontaktknapper går til den nåværende nettsiden.
+Forhåndsvisningen har `noindex,nofollow,noarchive`, og repositoryet har en robots.txt som nekter robotindeksering. Tjenester/prosjekter/kontakt er interne prøvevisninger; «Åpne kontaktskjemaet» går direkte til aktiv WordPress-side.
