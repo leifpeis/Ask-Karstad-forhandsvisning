@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#192c27">
+<title>Ask Bygg og Ingeniørtjenester – designforslag 01</title>
+<meta name="description" content="Designforhåndsvisning av ny Ask Bygg-nettside. Ikke produksjon.">
+<style>
+:root{--forest:#192c27;--deep:#13241f;--cream:#f7f5f0;--paper:#fffdfa;--pale:#efeee7;--sand:#d7b995;--rust:#a66c42;--line:#deded5;--muted:#586961;--shadow:0 24px 60px rgba(18,39,31,.12);}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--forest);font-family:Arial,Helvetica,sans-serif;line-height:1.63;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid #b68450;outline-offset:4px}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+.skip{position:absolute;top:-80px;left:12px;z-index:100;padding:12px;background:white}.skip:focus{top:10px}
+.preview-banner{background:var(--deep);color:#eae8e1;font-size:11px;letter-spacing:.10em;line-height:1.5}
+.preview-banner .wrap{min-height:36px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.preview-banner a{text-decoration:none;color:#dec7a9;font-weight:700}
+.preview-banner b{color:#e1b787}
+header{background:rgba(255,253,249,.97);border-bottom:1px solid rgba(25,44,39,.11);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}
+.nav{min-height:93px;display:flex;align-items:center;gap:35px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-symbol{width:48px;height:49px;display:grid;place-items:center;border:1.7px solid var(--forest);font-family:Georgia,serif;font-weight:700;font-size:31px;line-height:1}
+.brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.brand-copy strong{font-family:Georgia,"Times New Roman",serif;font-size:25px;letter-spacing:-.06em;font-weight:600}
+.brand-copy span{font-size:9px;letter-spacing:.14em;font-weight:700;margin-top:6px}
+nav.desktop{display:flex;align-items:center;gap:32px;margin-left:auto}
+nav.desktop a{text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.01em;transition:color .2s}
+nav.desktop a:hover{color:var(--rust)}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.025em;transition:background-color .2s,transform .2s}
+.nav-cta{background:var(--forest);color:#fff;padding:14px 23px;min-height:46px;white-space:nowrap}
+.nav-cta:hover,.button.dark:hover{background:#325046}
+.mobile-nav{display:none;position:relative;margin-left:auto}
+.mobile-nav summary{list-style:none;cursor:pointer;font-weight:700;font-size:13px;padding:12px 0}
+.mobile-nav summary::-webkit-details-marker{display:none}
+.mobile-nav nav{position:absolute;top:100%;right:0;min-width:205px;padding:10px;background:var(--paper);box-shadow:var(--shadow);border:1px solid var(--line)}
+.mobile-nav nav a{display:block;text-decoration:none;padding:12px;font-weight:700}
+.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.19em;font-weight:800;margin:0 0 22px;color:var(--rust)}
+.eyebrow-line{display:inline-flex;align-items:center;gap:11px}
+.eyebrow-line::before{content:"";height:1px;width:27px;background:currentColor}
+.hero{background:var(--paper);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);min-height:625px}
+.hero-copy{padding:84px 5% 90px max(32px,calc((100vw - 1240px)/2));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(49px,5.4vw,85px);line-height:1.055;letter-spacing:-.054em;max-width:750px;margin:0 0 30px}
+.hero h1 i{display:block;font-style:normal;color:var(--rust)}
+.hero p.intro{max-width:480px;font-size:17px;color:#59675e;margin:0 0 32px}
+.hero-buttons{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.button{min-height:54px;padding:15px 25px}
+.button.dark{color:#fff;background:var(--forest)}
+.button.light{background:transparent;border:1px solid #b4b8ae}
+.button:hover{transform:translateY(-2px)}
+.hero-visual{position:relative;min-height:565px;background:#dfded6}
+.hero-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,19,.10),transparent 60%);pointer-events:none}
+.hero-counter{position:absolute;bottom:30px;right:30px;z-index:1;background:rgba(255,253,249,.98);padding:22px 25px;min-width:208px;box-shadow:var(--shadow)}
+.hero-counter span{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.hero-counter strong{display:block;font-family:Georgia,serif;font-size:35px;line-height:1.25;font-weight:400;margin-top:6px}
+.hero-counter small{font-size:12px;color:var(--muted)}
+.promise{background:var(--deep);color:#f4f3eb}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);align-items:center;min-height:97px}
+.promise-grid>div{padding:22px 28px;border-left:1px solid #536257;display:flex;gap:16px;align-items:center}
+.promise-grid>div:first-child{border:0;padding-left:0}
+.promise-grid b{font-family:Georgia,serif;font-size:26px;font-weight:400;color:#d5b997}
+.promise-grid span{font-size:12px;line-height:1.45;letter-spacing:.035em}
+.section{padding:105px 0}
+.section.white{background:var(--paper)}
+.section.pale{background:var(--pale)}
+.section-header{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:43px}
+.section-header h2,.about h2,.closing h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-.047em;font-size:clamp(36px,4.2vw,61px);line-height:1.14;margin:0}
+.section-header p{font-size:15px;color:var(--muted);max-width:390px;margin:0 0 6px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.service{padding:30px 24px 25px;background:#fff;border:1px solid #e2e0d8;min-height:290px;display:flex;flex-direction:column;transition:background-color .2s,border-color .2s}
+.service:hover{background:#f7f4ed;border-color:#c8bba7}
+.service .number{font-family:Georgia,serif;color:var(--rust);font-size:20px}
+.service h3{font-family:Georgia,serif;font-size:26px;font-weight:400;line-height:1.17;margin:34px 0 13px;letter-spacing:-.03em}
+.service p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}
+.service .arrow{margin-top:auto;padding-top:18px;font-size:20px}
+.service a{text-decoration:none;display:block}
+.service a:hover{text-decoration:underline}
+.card-top-image{position:relative;aspect-ratio:1.55/1;overflow:hidden;background:#dadcd4}
+.card-top-image img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.project:hover .card-top-image img{transform:scale(1.045)}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:31px}
+.project>a{text-decoration:none}
+.project .tag{margin-top:24px;font-size:10px;font-weight:800;color:var(--rust);letter-spacing:.15em;text-transform:uppercase}
+.project h3{font-family:Georgia,serif;font-weight:400;letter-spacing:-.04em;font-size:31px;line-height:1.2;margin:7px 0 10px}
+.project p{font-size:14px;color:var(--muted);margin:0}
+.project-image-button{position:absolute;right:14px;bottom:14px;background:#fff;color:var(--forest);border-radius:50%;display:grid;place-items:center;width:47px;height:47px;font-size:22px}
+.all-projects{margin-top:43px;display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #d4d4cb;padding-top:23px}
+.all-projects p{color:var(--muted);font-size:13px;margin:0}
+.text-link{text-decoration:none;font-size:13px;font-weight:800;border-bottom:1px solid var(--forest);padding-bottom:6px;white-space:nowrap}
+.text-link:hover{color:var(--rust)}
+.about{background:#192f2b;color:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(45px,8vw,130px)}
+.about h2{max-width:540px;margin:0 0 23px}
+.about p{max-width:520px;color:#d0d8d1;font-size:15px;margin:0 0 17px}
+.about .kicker{color:#d5b997}
+.about .text-link{display:inline-block;color:#f4f0e6;border-color:#d0c7b8;margin-top:12px}
+.about figure{position:relative;margin:0;min-height:500px}
+.about figure img{width:100%;height:100%;min-height:500px;object-fit:cover}
+.about figure figcaption{position:absolute;bottom:-22px;left:-24px;padding:20px 30px;background:var(--sand);color:var(--deep);font-family:Georgia,serif;font-size:25px;max-width:285px;line-height:1.2}
+.closing{background:#ead9c4;padding:80px 0}
+.closing-inner{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.closing .kicker{color:#745132}
+.closing h2{font-size:clamp(38px,4.5vw,65px);max-width:670px}
+.closing p{max-width:610px;font-size:15px;color:#584c40}
+.closing .button.dark{white-space:nowrap}
+footer{background:#14241e;color:#ecece6;padding:63px 0 0}
+.footer-main{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:65px;padding-bottom:52px}
+.footer-logo{font-family:Georgia,serif;font-size:35px;letter-spacing:-.06em;line-height:1}
+.footer-logo span{display:block;font-family:Arial,sans-serif;font-weight:700;letter-spacing:.18em;font-size:10px;margin-top:12px}
+footer p{color:#bbc8bd;font-size:13px;max-width:330px}
+footer h3{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#c6a883;margin:0 0 21px}
+footer a{display:block;color:#ebece6;text-decoration:none;font-size:13px;margin-bottom:13px}
+footer a:hover{text-decoration:underline}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #45534b;padding:23px 0;color:#a9b8aa;font-size:11px;gap:20px}
+.footer-bottom a{display:inline;font-size:inherit;color:#cfc9bc}
+@media(max-width:1050px){nav.desktop,.nav-cta{display:none}.mobile-nav{display:block}.hero h1{font-size:clamp(48px,5.8vw,71px)}.services{grid-template-columns:repeat(2,1fr)}.service{min-height:250px}.about-grid{gap:40px}}
+@media(max-width:720px){.wrap{width:calc(100% - 36px)}.preview-banner .wrap{padding:7px 0;min-height:0;font-size:10px}.nav{min-height:78px}.brand-copy strong{font-size:22px}.brand-copy span{font-size:8px}.brand-symbol{width:42px;height:44px;font-size:28px}.hero-inner{grid-template-columns:1fr;min-height:0}.hero-copy{padding:67px 18px 58px}.hero h1{font-size:clamp(48px,10.5vw,65px)}.hero p.intro{font-size:15px}.hero-visual{min-height:365px}.hero-counter{right:16px;bottom:16px;padding:15px;min-width:175px}.hero-counter strong{font-size:29px}.promise-grid{grid-template-columns:1fr}.promise-grid>div,.promise-grid>div:first-child{padding:17px 0;border-left:0;border-top:1px solid #536257}.promise-grid>div:first-child{border:0}.section{padding:75px 0}.section-header{display:block;margin-bottom:27px}.section-header h2{margin-bottom:16px}.section-header p{font-size:14px}.project-grid,.about-grid,.footer-main{grid-template-columns:1fr}.project-grid{gap:37px}.project h3{font-size:27px}.about figure{min-height:300px}.about figure img{min-height:320px}.about figure figcaption{left:10px;bottom:-15px;font-size:22px}.about{padding-bottom:90px}.closing-inner{display:block}.closing .button{margin-top:16px}.footer-main{gap:32px}.footer-bottom{display:block}.footer-bottom>span{display:block;margin-top:8px}}
+@media(max-width:480px){.services{grid-template-columns:1fr}.service{min-height:220px}.service h3{margin-top:25px}.hero h1{font-size:47px}.button{width:100%}.all-projects{align-items:start;flex-direction:column}.hero-buttons{display:grid;grid-template-columns:1fr;width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#innhold">Hopp til innhold</a>
+<div class="preview-banner">
+  <div class="wrap"><span><b>DESIGNFORSLAG 01</b> · ASK BYGG · 14.10.2026 · IKKE LIVE</span><a href="https://www.askbyggtjenester.no/">Se dagens nettside ↗</a></div>
+</div>
+<header>
+  <div class="wrap nav">
+    <a href="#topp" class="brand" aria-label="Ask Bygg – tilbake til toppen">
+      <span class="brand-symbol" aria-hidden="true">A</span>
+      <span class="brand-copy"><strong>ASK BYGG</strong><span>OG INGENIØRTJENESTER</span></span>
+    </a>
+    <nav class="desktop" aria-label="Hovedmeny">
+      <a href="#tjenester">Tjenester</a><a href="#prosjekter">Prosjekter</a><a href="#om-oss">Om oss</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="#kontakt">Snakk med oss <span aria-hidden="true">↗</span></a>
+    <details class="mobile-nav"><summary>Meny ☰</summary>
+      <nav aria-label="Mobilmeny"><a href="#tjenester">Tjenester</a><a href="#prosjekter">Prosjekter</a><a href="#om-oss">Om oss</a><a href="#kontakt">Kontakt</a></nav>
+    </details>
+  </div>
+</header>
+<main id="innhold">
+  <section class="hero" id="topp">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="kicker eyebrow-line">BYGGINGENIØR OG TØMRER · BERGEN OG BJØRNAFJORDEN</p>
+        <h1>Bygg med innsikt.<i>Fra idé til virkelighet.</i></h1>
+        <p class="intro">Vi kombinerer byggingeniørens forståelse med håndverkerens erfaring. Fra byggetegninger og byggesøknad til praktisk gjennomføring.</p>
+        <div class="hero-buttons">
+          <a class="button dark" href="#tjenester">Våre tjenester <span aria-hidden="true">↗</span></a>
+          <a class="button light" href="#prosjekter">Se prosjektene</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://www.askbyggtjenester.no/wp-content/uploads/2025/06/Image2.webp" alt="3D-visualisering av tomannsbolig fra Lekvenvegen" width="1200" height="900" fetchpriority="high" decoding="async">
+        <div class="hero-counter"><span>ARBEID FRA VIRKELIGHETEN</span><strong>Lekvenvegen</strong><small>Prosjekt og visualisering · Bjørnafjorden</small></div>
+      </div>
+    </div>
+  </section>
+  <div class="promise">
+    <div class="wrap promise-grid">
+      <div><b>01</b><span>Byggfaglig og<br>ingeniørfaglig bakgrunn</span></div>
+      <div><b>02</b><span>Lokal tilstedeværelse<br>i Bergen og Bjørnafjorden</span></div>
+      <div><b>03</b><span>Hjelp fra tidlig idé<br>til ferdigstilt prosjekt</span></div>
+    </div>
+  </div>
+  <section class="section white" id="tjenester">
+    <div class="wrap">
+      <p class="kicker eyebrow-line">KOMPETANSEN VÅR</p>
+      <div class="section-header">
+        <h2>Riktig hjelp.<br>Hele byggeprosessen.</h2>
+        <p>Enten du skal bygge nytt, endre eksisterende bolig eller trenger råd før du starter, kan vi hjelpe deg videre.</p>
+      </div>
+      <div class="services">
+        <article class="service"><span class="number">01</span><h3>Byggesøknader</h3><p>Ansvarlig søker, dokumentasjon og oppfølging gjennom byggesaksprosessen.</p><span class="arrow" aria-hidden="true">↗</span></article>
+        <article class="service"><span class="number">02</span><h3>Byggetegninger</h3><p>Plan, fasade, snitt, situasjonsplaner og visualiseringer for byggeprosjektet.</p><span class="arrow" aria-hidden="true">↗</span></article>
+        <article class="service"><span class="number">03</span><h3>Rådgivning</h3><p>Vurderinger, mulighetsstudier og faglig hjelp ved valg av løsninger.</p><span class="arrow" aria-hidden="true">↗</span></article>
+        <article class="service"><span class="number">04</span><h3>Tømrerarbeid</h3><p>Ombygging, tilbygg og rehabilitering – med forståelse for detaljene.</p><span class="arrow" aria-hidden="true">↗</span></article>
+      </div>
+    </div>
+  </section>
+  <section class="section pale" id="prosjekter">
+    <div class="wrap">
+      <p class="kicker eyebrow-line">UTVALGTE ARBEIDER</p>
+      <div class="section-header">
+        <h2>Prosjekter som<br>forteller historien.</h2>
+        <p>Vi lar prosjektene vise samspillet mellom planlegging, tegninger og byggefaglig utførelse.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <a href="https://www.askbyggtjenester.no/2024/11/23/lekvenvegen/" target="_blank" rel="noopener noreferrer" aria-label="Se Lekvenvegen på dagens nettside">
+            <div class="card-top-image"><img src="https://www.askbyggtjenester.no/wp-content/uploads/2025/06/Image2.webp" alt="Tomannsboliger i Lekvenvegen, 3D-visualisering" width="950" height="620" loading="lazy" decoding="async"><span class="project-image-button" aria-hidden="true">↗</span></div>
+            <p class="tag">Bjørnafjorden / Tomannsbolig</p><h3>Lekvenvegen</h3><p>Planlegging og visualisering av tomannsboligprosjekt.</p>
+          </a>
+        </article>
+        <article class="project">
+          <a href="https://www.askbyggtjenester.no/2025/03/16/hagavik/" target="_blank" rel="noopener noreferrer" aria-label="Se Straumesvingen på dagens nettside">
+            <div class="card-top-image"><img src="https://www.askbyggtjenester.no/wp-content/uploads/2025/06/Straumesvingen.webp" alt="Illustrasjon fra ombygging i Straumesvingen" width="950" height="620" loading="lazy" decoding="async"><span class="project-image-button" aria-hidden="true">↗</span></div>
+            <p class="tag">Bergen / Ombygging og tilbygg</p><h3>Straumesvingen</h3><p>Nytenkning og prosjektering i eksisterende bolig.</p>
+          </a>
+        </article>
+        <article class="project">
+          <a href="https://www.askbyggtjenester.no/2024/11/23/eidsvag/" target="_blank" rel="noopener noreferrer" aria-label="Se Eidsvåg på dagens nettside">
+            <div class="card-top-image"><img src="https://www.askbyggtjenester.no/wp-content/uploads/2024/11/Eidsvagveien-72-samling-6-e1732629475171.png" alt="Visualisering og byggetegninger fra Eidsvåg" width="950" height="620" loading="lazy" decoding="async"><span class="project-image-button" aria-hidden="true">↗</span></div>
+            <p class="tag">Bergen / Enebolig</p><h3>Eidsvåg</h3><p>Tegninger og visuell presentasjon av boligprosjekt.</p>
+          </a>
+        </article>
+        <article class="project">
+          <a href="https://www.askbyggtjenester.no/2024/11/14/garasje-hagavik/" target="_blank" rel="noopener noreferrer" aria-label="Se garasje Hagavik på dagens nettside">
+            <div class="card-top-image"><img src="https://www.askbyggtjenester.no/wp-content/uploads/2024/11/A72-101-3D-1-e1742216076573.png" alt="3D-visualisering av garasje i Hagavik" width="950" height="620" loading="lazy" decoding="async"><span class="project-image-button" aria-hidden="true">↗</span></div>
+            <p class="tag">Bjørnafjorden / Garasje</p><h3>Garasje Hagavik</h3><p>Byggetegninger og visualisering for garasjeprosjekt.</p>
+          </a>
+        </article>
+      </div>
+      <div class="all-projects"><p>Dette er ekte referanseprosjekter fra dagens nettside. Kortene åpner originalprosjektene.</p><a href="https://www.askbyggtjenester.no/prosjekter/" class="text-link" target="_blank" rel="noopener noreferrer">Alle referansene ↗</a></div>
+    </div>
+  </section>
+  <section class="section about" id="om-oss">
+    <div class="wrap about-grid">
+      <div>
+        <p class="kicker eyebrow-line">OM ASK BYGG</p>
+        <h2>Teknisk forståelse.<br>Praktisk erfaring.</h2>
+        <p>Vi er et lokalt firma fra Bjørnafjorden med bakgrunn som håndverker og ingeniør. Målet er å gjøre byggeprosessen enklere og mer effektiv, uten å gjøre det mer komplisert enn nødvendig.</p>
+        <p>Vi er ikke de største. Til gjengjeld ønsker vi å levere tydelig kommunikasjon, gjennomarbeidede løsninger og skikkelig arbeid på hvert oppdrag.</p>
+        <a href="https://www.askbyggtjenester.no/om-oss/" class="text-link" target="_blank" rel="noopener noreferrer">Mer om oss ↗</a>
+      </div>
+      <figure>
+        <img src="https://www.askbyggtjenester.no/wp-content/uploads/2024/11/Eidsvagveien-72-samling-6-e1732629475171.png" alt="Fasade- og prosjektskisse fra bolig i Eidsvåg" width="830" height="680" loading="lazy" decoding="async">
+        <figcaption>Fra skisse til byggeplass.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="closing" id="kontakt">
+    <div class="wrap closing-inner">
+      <div>
+        <p class="kicker eyebrow-line">NESTE STEG STARTER HER</p>
+        <h2>Fortell oss hva du<br>har lyst til å bygge.</h2>
+        <p>Har du et spørsmål om byggesøknad, tegninger eller tømrerarbeid? Ta kontakt for en uforpliktende prat om veien videre.</p>
+      </div>
+      <a class="button dark" href="https://www.askbyggtjenester.no/kontakt/" target="_blank" rel="noopener noreferrer">Åpne kontaktsiden ↗</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-main">
+    <div><div class="footer-logo">ASK BYGG<span>OG INGENIØRTJENESTER AS</span></div><p>Fra idé til ferdigstilt byggeprosjekt i Bergen og Bjørnafjorden.</p></div>
+    <div><h3>Se mer</h3><a href="#tjenester">Tjenester</a><a href="#prosjekter">Prosjekter</a><a href="#om-oss">Om oss</a><a href="https://www.askkarstad.no/" target="_blank" rel="noopener noreferrer">Ask &amp; Karstad ↗</a></div>
+    <div><h3>Kontakt</h3><a href="tel:+4741349691">413 49 691</a><a href="mailto:torstein@askbyggtjenester.no">torstein@askbyggtjenester.no</a><a href="https://www.askbyggtjenester.no/kontakt/" target="_blank" rel="noopener noreferrer">Åpne kontaktskjema ↗</a></div>
+  </div>
+  <div class="wrap footer-bottom"><span>© 2026 Ask Bygg og Ingeniørtjenester AS · Designforslag 01, ikke publisert.</span><span><a href="https://www.askbyggtjenester.no/">Dagens nettside</a> · <a href="#topp">Til toppen ↑</a></span></div>
+</footer>
+</body>
+</html>
