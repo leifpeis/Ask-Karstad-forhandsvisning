@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-14T11:09:27.233Z",
+  "origin": "https://www.askbyggtjenester.no",
+  "previewOnly": true,
+  "pages": [
+    {
+      "url": "/",
+      "filename": "index.html",
+      "title": "Forside",
+      "status": 200,
+      "source": "Astro 1:1",
+      "safePreviewLength": 6273
+    },
+    {
+      "url": "/tjenester/",
+      "filename": "tjenester.html",
+      "title": "Tjenester | Ask Bygg og Ingeniørtjenester AS - Byggesøknader og byggetegninger",
+      "status": 200,
+      "headingSamples": [
+        "Tjenester",
+        "Byggesøknader",
+        "Byggetegninger",
+        "Rådgivning",
+        "Spesialtilpassede løsninger",
+        "Håndverkere",
+        "Ta kontakt for en uforpliktende prat",
+        "Slipp filer her"
+      ],
+      "originalHtmlLength": 182750,
+      "safePreviewLength": 146956
+    },
+    {
+      "url": "/prosjekter/",
+      "filename": "prosjekter.html",
+      "title": "Prosjekter | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [
+        "Prosjekter",
+        "Straumesvingen",
+        "Enebolig Eidsvåg",
+        "Tomannsboliger Lekvenvegen",
+        "Garasje Hagavik",
+        "Ta kontakt for en uforpliktende prat",
+        "Slipp filer her"
+      ],
+      "originalHtmlLength": 206705,
+      "safePreviewLength": 170185
+    },
+    {
+      "url": "/om-oss/",
+      "filename": "om-oss.html",
+      "title": "Om oss | Ask Bygg og Ingeniørtjenester AS - Byggesøknader og byggetegninger",
+      "status": 200,
+      "headingSamples": [
+        "Om oss",
+        "Hvem er vi",
+        "Ta kontakt for en uforpliktende prat",
+        "Slipp filer her"
+      ],
+      "originalHtmlLength": 180554,
+      "safePreviewLength": 144436
+    },
+    {
+      "url": "/kontakt/",
+      "filename": "kontakt.html",
+      "title": "Kontakt | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [
+        "Kontakt oss",
+        "Kontakt info",
+        "Slipp filer her"
+      ],
+      "originalHtmlLength": 172836,
+      "safePreviewLength": 137226
+    },
+    {
+      "url": "/2024/11/23/lekvenvegen/",
+      "filename": "prosjekt-lekvenvegen.html",
+      "title": "Tomannsboliger Lekvenvegen | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [],
+      "originalHtmlLength": 157314,
+      "safePreviewLength": 126158
+    },
+    {
+      "url": "/2024/11/23/eidsvag/",
+      "filename": "prosjekt-eidsvag.html",
+      "title": "Enebolig Eidsvåg | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [],
+      "originalHtmlLength": 156589,
+      "safePreviewLength": 125342
+    },
+    {
+      "url": "/2024/11/14/garasje-hagavik/",
+      "filename": "prosjekt-garasje-hagavik.html",
+      "title": "Garasje Hagavik | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [],
+      "originalHtmlLength": 159332,
+      "safePreviewLength": 128436
+    },
+    {
+      "url": "/2025/03/16/hagavik/",
+      "filename": "prosjekt-straumesvingen.html",
+      "title": "Straumesvingen | Ask Bygg og Ingeniørtjenester AS",
+      "status": 200,
+      "headingSamples": [],
+      "originalHtmlLength": 157631,
+      "safePreviewLength": 126946
+    }
+  ]
+}

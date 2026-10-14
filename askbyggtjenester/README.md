@@ -1,15 +1,13 @@
-# Ask Bygg – visuell 1:1-forhåndsvisning
+# Ask Bygg – forhåndsvisning av hele nettsiden (v4)
 
-**[Åpne den nye visuelle kopien](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)**
+[Åpne testnettstedet](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
 
-Gjeldende versjon: **03 – basert på dagens WordPress**, 14. oktober 2026.
+**Status:** Kun forhåndsvisning. Dagens WordPress og Google-rangeringer er uendret.
 
-- [Arkivert 1:1-forside, versjon 03](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v3-fidelity/)
-- [Tidligere redesign 01](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v1/)
-- [Tidligere redesign 02](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v2/)
+Alle 9 sidene er navigerbare. Forsiden er Astro-kandidat med visuell sammenligning; de åtte øvrige sidene er kopier av offentlig WordPress-HTML for nøyaktig designreferanse, ikke endelig optimalisert Astro-kode.
 
-**Arkitektur:** Kildekoden, referanseskjermbilder, tester og Astro-kandidaten ligger i privat `leifpeis/Ask-Byggtjenester-nettside`, gren `rebuild/visual-parity-home-2026-10-14`, [utkast-PR #6](https://github.com/leifpeis/Ask-Byggtjenester-nettside/pull/6). Dette er kun offentlig statisk HTML/CSS.
+Skjemafeltene er skrivebeskyttet i testvisningen; Send inn tar deg til aktiv kontaktløsning. Originale bilder og mange stiler er ennå avhengige av WordPress. Ingen WordPress-analyse- eller kontaktskjemaskript kjører her. Sidene har noindex.
 
-Dette er designforhåndsvisning. **Ingen produksjonsutrulling, skjema-mottak eller sporing.** Felt er skrivebeskyttet; lenken `Send inn` åpner kontaktskjemaet på den eksisterende nettsiden. Bilder lastes foreløpig fra original WordPress og må migreres før eventuell teknisk cutover. Alle forhåndsvisninger har `noindex,nofollow,noarchive`. Arkiver overskrives ikke.
+[Versjon 04 – arkivert](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v4-whole-site/) · [Versjon 03 – arkivert](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v3-fidelity/)
 
-Forhåndsvisningsfilene er eksportert via GitHub Actions og publisert separat. Eldre versjoner beholdes.
+Privat kilde: `leifpeis/Ask-Byggtjenester-nettside`, gren `rebuild/visual-parity-complete-2026-10-14`.
