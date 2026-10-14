@@ -1,13 +1,10 @@
-# Ask Bygg – forhåndsvisning av hele nettsiden (v4)
+# Ask Bygg – full 1:1-forhåndsvisning v5
 
-[Åpne testnettstedet](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
+[Åpne forhåndsvisningen](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
 
-**Status:** Kun forhåndsvisning. Dagens WordPress og Google-rangeringer er uendret.
+Alle ni sider er navigerbare. Versjon v5 bruker midlertidig Google Fonts og Font Awesome CSS for å unngå fontfeil i GitHub Pages. Originale v1–v4-arkiver er beholdt.
 
-Alle 9 sidene er navigerbare. Forsiden er Astro-kandidat med visuell sammenligning; de åtte øvrige sidene er kopier av offentlig WordPress-HTML for nøyaktig designreferanse, ikke endelig optimalisert Astro-kode.
+Forsiden er egen Astro-kode. De åtte øvrige sidene er visuelle WordPress-snapshots og skal erstattes av optimalisert Astro-kode før produksjon.
 
-Skjemafeltene er skrivebeskyttet i testvisningen; Send inn tar deg til aktiv kontaktløsning. Originale bilder og mange stiler er ennå avhengige av WordPress. Ingen WordPress-analyse- eller kontaktskjemaskript kjører her. Sidene har noindex.
-
-[Versjon 04 – arkivert](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v4-whole-site/) · [Versjon 03 – arkivert](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v3-fidelity/)
-
-Privat kilde: `leifpeis/Ask-Byggtjenester-nettside`, gren `rebuild/visual-parity-complete-2026-10-14`.
+Siden er noindex, ingen skjemainnsending eller sporingsskript. Den aktive WordPress-siden er ikke endret. 
+Privat GitHub-kilde: `rebuild/visual-parity-complete-2026-10-14` (PR #7).
