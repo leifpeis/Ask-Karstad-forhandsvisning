@@ -1,11 +1,15 @@
-# Ask Bygg – forhåndsvisning
-[Åpne versjon 02 – fungerende navigasjon](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)
+# Ask Bygg – visuell 1:1-forhåndsvisning
 
-Samme oppsett som Ask & Karstad: privat kilde og offentlig statisk GitHub Pages-visning, uten innlogging, skjema, sporing eller automatisk WordPress-publisering.
+**[Åpne den nye visuelle kopien](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/)**
 
-- **Nyeste versjon:** `/askbyggtjenester/` viser versjon 02, med 9 navigerbare sider.
-- **Arkiv v1:** `/askbyggtjenester/versions/2026-10-14-v1/` er urørt.
-- **Arkiv v2:** `/askbyggtjenester/versions/2026-10-14-v2/` er en uforanderlig kopi.
-- **Kilde:** `leifpeis/Ask-Byggtjenester-nettside`, gren `preview/2026-10-14-v1`, mappe `preview/v2/`.
+Gjeldende versjon: **03 – basert på dagens WordPress**, 14. oktober 2026.
 
-Forhåndsvisningen har `noindex,nofollow,noarchive`, og repositoryet har en robots.txt som nekter robotindeksering. Tjenester/prosjekter/kontakt er interne prøvevisninger; «Åpne kontaktskjemaet» går direkte til aktiv WordPress-side.
+- [Arkivert 1:1-forside, versjon 03](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v3-fidelity/)
+- [Tidligere redesign 01](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v1/)
+- [Tidligere redesign 02](https://leifpeis.github.io/Ask-Karstad-forhandsvisning/askbyggtjenester/versions/2026-10-14-v2/)
+
+**Arkitektur:** Kildekoden, referanseskjermbilder, tester og Astro-kandidaten ligger i privat `leifpeis/Ask-Byggtjenester-nettside`, gren `rebuild/visual-parity-home-2026-10-14`, [utkast-PR #6](https://github.com/leifpeis/Ask-Byggtjenester-nettside/pull/6). Dette er kun offentlig statisk HTML/CSS.
+
+Dette er designforhåndsvisning. **Ingen produksjonsutrulling, skjema-mottak eller sporing.** Felt er skrivebeskyttet; lenken `Send inn` åpner kontaktskjemaet på den eksisterende nettsiden. Bilder lastes foreløpig fra original WordPress og må migreres før eventuell teknisk cutover. Alle forhåndsvisninger har `noindex,nofollow,noarchive`. Arkiver overskrives ikke.
+
+Forhåndsvisningsfilene er eksportert via GitHub Actions og publisert separat. Eldre versjoner beholdes.
